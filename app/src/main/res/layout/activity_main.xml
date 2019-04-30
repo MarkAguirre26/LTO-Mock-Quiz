@@ -41,22 +41,32 @@
             android:orientation="vertical">
 
             <Button
+                android:tag="A"
                 android:id="@+id/btnChoiceA"
+                android:onClick="btnChoiceA_Clicked"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_border_green" />
 
             <Button
+                android:tag="B"
+                android:onClick="btnChoiceB_Clicked"
                 android:id="@+id/btnChoiceB"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_border_green" />
 
             <Button
+                android:tag="C"
+                android:onClick="btnChoiceC_Clicked"
                 android:id="@+id/btnChoiceC"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_border_green" />
+
 
         </LinearLayout>
     </RelativeLayout>
