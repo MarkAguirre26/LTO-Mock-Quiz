@@ -3,10 +3,9 @@ package com.drive.q;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.CountDownTimer;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.drive.q.com.drive.q.utils.Screen;
+import com.drive.q.utils.Screen;
 
 public class LauncherActivity extends Activity {
 
@@ -25,10 +24,10 @@ public class LauncherActivity extends Activity {
 
             @Override
             public void onFinish() {
-                Screen.setNextScreen(LauncherActivity.this,getApplicationContext());
-//                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
-//                overridePendingTransition(0, 0);
-//                finish();
+
+                startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                overridePendingTransition(0, 0);
+                finish();
             }
         }.start();
 

@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Q</string>
-    <string name="dummy_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</string>
+    <string name="dummy_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis</string>
 </resources>

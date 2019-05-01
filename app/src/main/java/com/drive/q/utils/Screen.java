@@ -1,4 +1,4 @@
-package com.drive.q.com.drive.q.utils;
+package com.drive.q.utils;
 
 import android.app.Activity;
 
@@ -17,10 +17,10 @@ public class Screen {
     }
 
 
-    public static  void setNextScreen(Activity activity, Context ctx){
-
-        activity.startActivity(new Intent(ctx, MainActivity.class));
-        activity.overridePendingTransition(0, 0);
-        activity.finish();
-    }
+//    public static  void setNextScreen(Activity activity, Context ctx){
+//
+//        activity.startActivity(new Intent(ctx, MainActivity.class));
+//        activity.overridePendingTransition(0, 0);
+//        activity.finish();
+//    }
 }
