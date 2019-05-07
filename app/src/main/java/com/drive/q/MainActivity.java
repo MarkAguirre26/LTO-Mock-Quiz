@@ -51,7 +51,8 @@ public class MainActivity extends Activity {
 
         items.addAll(new ItemsService().getItems());
         Collections.shuffle(items);
-        totalItems = items.size();
+//        totalItems = items.size();
+        totalItems = 40;
     }
 
 
@@ -60,8 +61,11 @@ public class MainActivity extends Activity {
         validateUserAnswer(tag);
 
 
-        if (currentIndex == totalItems) {
+      if (currentIndex == totalItems) {
+
+
             submitUserAnswer();
+
         }else{
             setQuestionToView();
         }
@@ -88,9 +92,9 @@ public class MainActivity extends Activity {
 
 
         String question = items.get(currentIndex).getQuestion();
-        String choiceA = "A "+ items.get(currentIndex).getChoiceA();
-        String choiceB = "B "+ items.get(currentIndex).getChoiceB();
-        String choiceC = "C "+ items.get(currentIndex).getChoiceC();
+        String choiceA = "A.) "+ items.get(currentIndex).getChoiceA();
+        String choiceB = "B.) "+ items.get(currentIndex).getChoiceB();
+        String choiceC = "C.) "+ items.get(currentIndex).getChoiceC();
         answer = items.get(currentIndex).getAnswer();
 
         currentIndex++;

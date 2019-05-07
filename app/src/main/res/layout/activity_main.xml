@@ -41,6 +41,8 @@
             android:orientation="vertical">
 
             <Button
+                android:textAllCaps="false"
+                android:padding="5dp"
                 android:tag="A"
                 android:id="@+id/btnChoiceA"
                 android:onClick="btnChoice_Clicked"
@@ -50,6 +52,8 @@
                 android:background="@drawable/button_border_green" />
 
             <Button
+                android:textAllCaps="false"
+                android:padding="5dp"
                 android:tag="B"
                 android:onClick="btnChoice_Clicked"
                 android:id="@+id/btnChoiceB"
@@ -59,6 +63,8 @@
                 android:background="@drawable/button_border_green" />
 
             <Button
+                android:textAllCaps="false"
+                android:padding="5dp"
                 android:tag="C"
                 android:onClick="btnChoice_Clicked"
                 android:id="@+id/btnChoiceC"
