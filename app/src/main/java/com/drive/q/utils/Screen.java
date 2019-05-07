@@ -17,10 +17,5 @@ public class Screen {
     }
 
 
-//    public static  void setNextScreen(Activity activity, Context ctx){
-//
-//        activity.startActivity(new Intent(ctx, MainActivity.class));
-//        activity.overridePendingTransition(0, 0);
-//        activity.finish();
-//    }
+
 }

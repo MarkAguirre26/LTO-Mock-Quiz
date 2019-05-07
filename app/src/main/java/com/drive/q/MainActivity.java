@@ -40,13 +40,14 @@ public class MainActivity extends Activity {
         btnChoiceB = findViewById(R.id.btnChoiceB);
         btnChoiceC = findViewById(R.id.btnChoiceC);
 
+        //get questions list from service
+        init();
 
-        getItemsFromService();
         setQuestionToView();
 
     }
 
-    private void getItemsFromService() {
+    private void init() {
 
         items.addAll(new ItemsService().getItems());
         Collections.shuffle(items);
@@ -87,9 +88,9 @@ public class MainActivity extends Activity {
 
 
         String question = items.get(currentIndex).getQuestion();
-        String choiceA = items.get(currentIndex).getChoiceA();
-        String choiceB = items.get(currentIndex).getChoiceB();
-        String choiceC = items.get(currentIndex).getChoiceC();
+        String choiceA = "A "+ items.get(currentIndex).getChoiceA();
+        String choiceB = "B "+ items.get(currentIndex).getChoiceB();
+        String choiceC = "C "+ items.get(currentIndex).getChoiceC();
         answer = items.get(currentIndex).getAnswer();
 
         currentIndex++;
