@@ -84,7 +84,7 @@ public class MainActivity extends Activity {
         Result.totalItems = totalItems;
 
         startActivity(new Intent(getApplicationContext(), ResultActivity.class));
-        overridePendingTransition(0, 0);
+//        overridePendingTransition(0, 0);
         finish();
     }
 

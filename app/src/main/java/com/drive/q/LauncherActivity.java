@@ -26,7 +26,7 @@ public class LauncherActivity extends Activity {
             public void onFinish() {
 
                 startActivity(new Intent(getApplicationContext(), HomeActivity.class));
-                overridePendingTransition(0, 0);
+//                overridePendingTransition(0, 0);
                 finish();
             }
         }.start();
